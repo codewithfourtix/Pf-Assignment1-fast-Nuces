@@ -1,39 +1,29 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-	float A , B , C  ,Left_Side , Right_Side;
-	cout << "Enter the 3 Numbers : ";
-	cin >> A >> B >> C;
-	if (A>B && A>C){
-		Left_Side = A * A;
-		Right_Side = B*B + C*C;
-		if(Left_Side == Right_Side){
-			cout << "It Holds the Pathagoras Theorm \nThe First Number that you have entered is the HYPOTANOUS !!";
-		}else {
-			cout << "Its Doesn't Hold the Property";
-			return 0;
-		}
-	}else if(B>C && B>A){
-		Left_Side = B * B;
-		Right_Side = C*C + A*A;
-		if(Left_Side == Right_Side){
-			cout << "It Holds the Pathagoras Theorm \nThe Second Number that you have entered is the HYPOTANOUS !!";
-		}else {
-			cout << "Its Doesn't Hold the Property";
-			return 0;
-		}
-	}else if(C>A && C>B){
-		Left_Side = C * C;
-		Right_Side = B*B + A*A;
-		if(Left_Side == Right_Side){
-			cout << "It Holds the Pathagoras Theorm \nThe Third Number that you have entered is the HYPOTANOUS !!";
-		}else {
-			cout << "Its Doesn't Hold the Property";
-			return 0;
-		}
-	}else{
-		
-	}
-	return 0;
+int main() {
+    char Player1, Player2;
+
+    cout << "Enter R for Rock, P for Paper, S for Scissors (Player 1 and Player 2): ";
+    cin >> Player1 >> Player2;
+    if ((Player1 == 'R' || Player1 == 'r') && (Player2 == 'S' || Player2 == 's')) {
+        cout << "Rock beats Scissors. Player 1 Wins!" << endl;
+    } else if ((Player1 == 'R' || Player1 == 'r') && (Player2 == 'P' || Player2 == 'p')) {
+        cout << "Paper beats Rock. Player 2 Wins!" << endl;
+    } else if ((Player1 == 'P' || Player1 == 'p') && (Player2 == 'R' || Player2 == 'r')) {
+        cout << "Paper beats Rock. Player 1 Wins!" << endl;
+    } else if ((Player1 == 'P' || Player1 == 'p') && (Player2 == 'S' || Player2 == 's')) {
+        cout << "Scissors beats Paper. Player 2 Wins!" << endl;
+    } else if ((Player1 == 'S' || Player1 == 's') && (Player2 == 'P' || Player2 == 'p')) {
+        cout << "Scissors beats Paper. Player 1 Wins!" << endl;
+    } else if ((Player1 == 'S' || Player1 == 's') && (Player2 == 'R' || Player2 == 'r')) {
+        cout << "Rock beats Scissors. Player 2 Wins!" << endl;
+    } else if ((Player1 == Player2) && (Player1 == 'R' || Player1 == 'P' || Player1 == 'S')) {
+        cout << "It's a Tie!" << endl;
+    } else {
+        cout << "Invalid Input!" << endl;
+    }
+
+    return 0;
 }
+
