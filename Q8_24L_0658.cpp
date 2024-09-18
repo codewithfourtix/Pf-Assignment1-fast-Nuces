@@ -14,7 +14,6 @@ int main() {
     }else {
         cout << "NON" << endl;
     }
-
     return 0;
 }
 
