@@ -74,11 +74,11 @@ int main() {
         cout << "Total Price : PKR" << Total_Amount << endl;
     } else if (Currency_Code == 2) { 
         float euroConversionRate = 193;
-        cout << "Meal Price : €" << Meal_Price / euroConversionRate << endl;
-        cout << "Sales Tax : €" << Sales_Tax / euroConversionRate << endl;
-        cout << "Total Price : €" << Total_Amount / euroConversionRate << endl;
+        cout << "Meal Price : â‚¬" << Meal_Price / euroConversionRate << endl;
+        cout << "Sales Tax : â‚¬" << Sales_Tax / euroConversionRate << endl;
+        cout << "Total Price : â‚¬" << Total_Amount / euroConversionRate << endl;
     } else if (Currency_Code == 3) {
-        float dollarConversionRate = 165;
+        float dollarConversionRate = 165.0;
         cout << "Meal Price : $" << Meal_Price / dollarConversionRate << endl;
         cout << "Sales Tax : $" << Sales_Tax / dollarConversionRate << endl;
         cout << "Total Price : $" << Total_Amount / dollarConversionRate << endl;
