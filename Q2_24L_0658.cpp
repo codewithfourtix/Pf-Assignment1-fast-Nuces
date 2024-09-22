@@ -27,7 +27,7 @@ int main() {
         cout << "Invalid Meal Code";
         return 1;
     }
-    cout << "Ohh! That's Great. So you would like to have ";
+    cout << "Ohhh! That's Great. So you would like to have ";
     if (Code == 1) {
         cout << "Chicken Hanadi\n";
     } else if (Code == 2) {
