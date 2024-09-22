@@ -83,7 +83,7 @@ int main() {
         cout << "Sales Tax : $" << Sales_Tax / dollarConversionRate << endl;
         cout << "Total Price : $" << Total_Amount / dollarConversionRate << endl;
     } else {
-        cout << "Invalid Currency Selection";
+        cout << "Sorry! Invalid Currency Selection";
     }
 
     return 0;
