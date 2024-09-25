@@ -13,6 +13,7 @@ int main() {
     cout << " 5\t   Creamy Chicken\t\t2500\n";
     cout << "Enter the Code to Select the Meal: ";
     cin >> Code;
+
     if (Code == 1) {
         Price_Per_Kg = 1800;
     } else if (Code == 2) {
@@ -28,6 +29,7 @@ int main() {
         return 1;
     }
     cout << "Ohhh! That's Great. So you would like to have ";
+
     if (Code == 1) {
         cout << "Chicken Hanadi\n";
     } else if (Code == 2) {
