@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 int main() {
     int roll_no1, roll_no2, roll_no3, roll_no4, roll_no5;
     int Student1_1, Student1_2, Student1_3, Student1_4, Student1_5; // Courses for student 1
